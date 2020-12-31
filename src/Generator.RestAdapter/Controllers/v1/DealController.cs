@@ -1,5 +1,4 @@
-﻿using Generator.DomainApi.Port;
-using Generator.Persistence.Adapter.Port;
+﻿using Generator.Persistence.Adapter.Port;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Generator.RestAdapter.Controllers.v1
