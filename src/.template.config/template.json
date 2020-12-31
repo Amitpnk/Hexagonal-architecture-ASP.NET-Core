@@ -1,0 +1,33 @@
+{
+  "author": "Amit Naik",
+  "classifications": [],
+  "description": "Hexagonal Architecture Web API solution template which is built on Domain-Driven Design (DDD)-based using .NET Core",
+  "name": "Hexagonal Architecture",
+  "defaultName": "OA",
+  "identity": "OnionArchitecture.CSharp",
+  "groupIdentity": "OnionArchitecture",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "HexaArchitecture",
+  "sourceName": "Generator",
+  "guids": [],
+  "primaryOutputs": [
+    {
+      "path": "Generator\\Generator.csproj"
+    },
+    {
+      "path": "Generator.Domain\\Generator.Domain.csproj"
+    },
+    {
+      "path": "Generator.DomainApi\\Generator.DomainApi.csproj"
+    },
+    {
+      "path": "Generator.Persistence.Adapter\\Generator.Persistence.Adapter.csproj"
+    },
+    {
+      "path": "Generator.RestAdapter\\Generator.RestAdapter.csproj"
+    }
+  ]
+}
