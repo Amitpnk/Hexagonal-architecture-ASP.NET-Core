@@ -12,9 +12,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\Generator.Domain\Generator.Domain.csproj" />
+    <ProjectReference Include="..\Generator.DomainApi\Generator.DomainApi.csproj" />
   </ItemGroup>
 
 </Project>

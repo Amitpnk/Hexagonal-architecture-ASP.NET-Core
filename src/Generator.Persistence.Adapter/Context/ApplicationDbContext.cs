@@ -1,4 +1,4 @@
-﻿using Generator.Persistence.Adapter.Entity;
+﻿using Generator.DomainApi.Model;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,16 +14,16 @@ namespace Generator.Persistence.Adapter.Context
         {
         }
 
-        public DbSet<DealEntity> Deals { get; set; }
+        public DbSet<Deal> Deals { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            if (modelBuilder != null)
-            {
-                //Fluent API configurations 
-                modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-            }
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    if (modelBuilder != null)
+        //    {
+        //        //Fluent API configurations 
+        //        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+        //    }
+        //}
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

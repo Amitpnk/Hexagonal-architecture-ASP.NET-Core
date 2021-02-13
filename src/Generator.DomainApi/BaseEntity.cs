@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Generator.Persistence.Adapter
+namespace Generator.DomainApi
 {
     public class BaseEntity<TKey>
     {

@@ -1,3 +1,4 @@
+using Generator.Domain;
 using Generator.Extension;
 using Generator.Persistence.Adapter;
 using Microsoft.AspNetCore.Builder;
@@ -21,6 +22,8 @@ namespace Generator
             services.AddControllers();
 
             services.AddPersistence();
+
+            services.AddDomain();
 
             services.AddSwaggerOpenAPI();
 
