@@ -1,4 +1,5 @@
 using Generator.Domain;
+using Generator.DomainApi.Services;
 using Generator.Extension;
 using Generator.Persistence.Adapter;
 using Generator.Persistence.Adapter.Context;
@@ -15,9 +16,14 @@ namespace Generator
     public class Startup
     {
         public IConfiguration Configuration { get; }
+        private AppSettings AppSettings { get; set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            AppSettings = new AppSettings();
+            Configuration.Bind(AppSettings);
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -28,7 +34,7 @@ namespace Generator
 
             services.AddDomain();
 
-            services.AddSwaggerOpenAPI();
+            services.AddSwaggerOpenAPI(AppSettings);
 
             services.AddApiVersion();
 

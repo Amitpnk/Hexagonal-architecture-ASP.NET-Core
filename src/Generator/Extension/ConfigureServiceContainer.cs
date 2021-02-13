@@ -1,4 +1,5 @@
-﻿using Generator.Persistence.Adapter.Context;
+﻿using Generator.DomainApi.Services;
+using Generator.Persistence.Adapter.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -12,7 +13,7 @@ namespace Generator.Extension
 {
     public static class ConfigureServiceContainer
     {
-        public static void AddSwaggerOpenAPI(this IServiceCollection serviceCollection)
+        public static void AddSwaggerOpenAPI(this IServiceCollection serviceCollection, AppSettings appSettings)
         {
             serviceCollection.AddSwaggerGen(setupAction =>
             {
@@ -20,9 +21,9 @@ namespace Generator.Extension
                     "OpenAPISpecification",
                     new Microsoft.OpenApi.Models.OpenApiInfo()
                     {
-                        Title = "Hexagonal Architecture WebAPI",
+                        Title = appSettings.ApplicationDetail.ApplicationName,
                         Version = "1",
-                        Description = "Through this WebAPI you can access details",
+                        Description = appSettings.ApplicationDetail.Description,
                     });
                 setupAction.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
