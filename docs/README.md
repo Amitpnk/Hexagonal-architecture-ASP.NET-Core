@@ -1,4 +1,5 @@
 ![.NET Core](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/workflows/.NET%20Core/badge.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/blob/develop/LICENSE)
 
 # Hexagonal Architecture ASP.NET Core
 
