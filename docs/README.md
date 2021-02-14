@@ -1,13 +1,14 @@
+![.NET Core](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/workflows/.NET%20Core/badge.svg)
+
 # Hexagonal Architecture ASP.NET Core
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core">
     <img src="img/logo.png" alt="Logo" width="110" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Hexagonal Architecture ASP.NET Core</h3>
 
   <p align="center">
     App generator API solution template which is built on Hexagnonal Architecture with all essential feature using .NET Core!
@@ -23,9 +24,6 @@
   </p>
 </p>
 
-
-
-<!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
@@ -73,7 +71,6 @@ App generator API solution template which is built on Hexagnonal Architecture wi
 
 ![image](img/hexagonal-arch.png)
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 todo
@@ -82,7 +79,6 @@ todo
 
 todo
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -93,7 +89,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
 ## Licence Used
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Onion-architecture-ASP.NET-Core/blob/develop/LICENSE)
