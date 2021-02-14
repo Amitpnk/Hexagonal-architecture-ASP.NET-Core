@@ -3,9 +3,9 @@
   "classifications": [],
   "description": "Hexagonal Architecture Web API solution template which is built on Domain-Driven Design (DDD)-based using .NET Core",
   "name": "Hexagonal Architecture",
-  "defaultName": "OA",
-  "identity": "OnionArchitecture.CSharp",
-  "groupIdentity": "OnionArchitecture",
+  "defaultName": "HA",
+  "identity": "HexaArchitecture.CSharp",
+  "groupIdentity": "HexaArchitecture",
   "tags": {
     "language": "C#",
     "type": "project"

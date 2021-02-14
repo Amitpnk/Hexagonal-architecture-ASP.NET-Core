@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{1669E311-49AC-44E7-B3FC-7CC3C26662F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator", "Generator\Generator.csproj", "{1669E311-49AC-44E7-B3FC-7CC3C26662F0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.DomainApi", "Generator.DomainApi\Generator.DomainApi.csproj", "{10AAF466-3F4A-47E0-9E75-9737B19B46AF}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.Persistence.Adapter", "Generator.Persistence.Adapter\Generator.Persistence.Adapter.csproj", "{8291FB65-54AF-4D64-AE68-B4F64E33DBE1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.RestAdapter", "Generator.RestAdapter\Generator.RestAdapter.csproj", "{AD28F426-0678-452C-9D95-CB14703D8756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
