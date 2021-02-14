@@ -141,3 +141,4 @@ Having any issues or troubles getting started? Drop a mail to amit.naik8103@gmai
 * [Article 1 - Hexagonal Architecture](https://dzone.com/articles/hexagonal-architecture-what-is-it-and-how-does-it)
 * [Article 2 - Difference between Hexa and Microservice](https://stackoverflow.com/questions/54697026/hexagonal-architecture-and-microservices-how-do-they-fit-together)
 * [Article 3 - Microservices Hexagonal Architecture](https://medium.com/sciforce/another-story-about-microservices-hexagonal-architecture-23db93fa52a2)
+* [Article 4 - Netflix - Hexagonal article](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
