@@ -90,6 +90,42 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Project description
+
+we can see that all the Layers are dependent only on the Core Layers
+
+<details>
+  <summary><b>Domain Api layer</b></summary>
+  <p>
+    Domain Api Layers (Core layer) is implemented in center and never depends on any other layer. <br>
+    It is contract for domain layer interaction(ports) so that primary and secondary adapters can implement the contract.This is also known and DIP or Dependency Inversion Principle
+  </p>
+</details>
+<details>
+  <summary><b>Domain layer</b></summary>
+  <p>
+    Domain Layers (Business layer) which has business logic. and it is keep clean with no other dependencies.
+  </p>
+</details>
+<details>
+  <summary><b>Rest Adapter layer</b></summary>
+  <p>
+    Rest Adapter also known as <i>left port's adapter</i> and <i>primary adapter</i> where we implement restfull service (i.e., GET, POST, PUT, DELETE, etc)
+  </p>
+</details>
+<details>
+  <summary><b>Persistence Adapter layer</b></summary>
+  <p>
+    Rest Adapter also known as <i>right port's adapter</i> and <i>secondary adapter</i>where we have implement Entityframework core which already implements a repository design pattern. DbContext will be UoW (Unit of Work) and each DbSet is the repository. This interacts with our database using dataproviders
+  </p>
+</details>
+<details>
+  <summary><b>Bootstrap/Presentation Layer</b></summary>
+  <p>
+    This is final build of project, where it all begins
+  </p>
+</details>
+
 ## Licence Used
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Onion-architecture-ASP.NET-Core/blob/develop/LICENSE)
