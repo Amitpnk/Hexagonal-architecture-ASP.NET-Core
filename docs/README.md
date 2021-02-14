@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/logo.png" alt="Logo" width="110" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -104,8 +104,8 @@ See the contents of the LICENSE file for details
 
 Having any issues or troubles getting started? Drop a mail to amit.naik8103@gmail.com or [Raise a Bug or Feature Request](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/issues/new). Always happy to help.
 
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
 * [Article 1 - Hexagonal Architecture](https://dzone.com/articles/hexagonal-architecture-what-is-it-and-how-does-it)
 * [Article 2 - Difference between Hexa and Microservice](https://stackoverflow.com/questions/54697026/hexagonal-architecture-and-microservices-how-do-they-fit-together)
+* [Article 3 - Microservices Hexagonal Architecture](https://medium.com/sciforce/another-story-about-microservices-hexagonal-architecture-23db93fa52a2)
