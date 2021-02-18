@@ -1,16 +1,16 @@
-﻿using Generator.DomainApi.Port;
+﻿using Generator.DomainApi.Model;
+using Generator.DomainApi.Port;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Generator.RestAdapter.Controllers.v1
 {
     [ApiController]
-    //[Route("api/v{version:apiVersion}/[controller]")]
-    [Route("api/v1/deal")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class DealController : ControllerBase
     {
-        private readonly IRequestDeal<int> _requestDeal;
+        private readonly IRequestDeal<Deal> _requestDeal;
 
-        public DealController(IRequestDeal<int> requestDeal)
+        public DealController(IRequestDeal<Deal> requestDeal)
         {
             _requestDeal = requestDeal;
         }

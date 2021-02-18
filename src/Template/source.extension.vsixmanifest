@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="DF900711-6343-4ED4-99FA-C8BC93E9AB83" Version="1.0.2" Language="en-US" Publisher="Amit Naik" />
+        <Identity Id="DF900711-6343-4ED4-99FA-C8BC93E9AB83" Version="1.1" Language="en-US" Publisher="Amit Naik" />
         <DisplayName>Hexagonal Architecture</DisplayName>
         <Description xml:space="preserve">Hexagonal Architecture Web API solution template which is built on Domain-Driven Design (DDD)-based using .NET Core</Description>
         <License>LICENSE.txt</License>

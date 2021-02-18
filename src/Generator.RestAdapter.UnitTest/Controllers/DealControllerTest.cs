@@ -1,4 +1,5 @@
-﻿using Generator.DomainApi.Port;
+﻿using Generator.DomainApi.Model;
+using Generator.DomainApi.Port;
 using Generator.RestAdapter.Controllers.v1;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -14,12 +15,12 @@ namespace Generator.RestAdapter.UnitTest.Controllers
     public class DealControllerTest
     {
         private DealController _controller;
-        private Mock<IRequestDeal<int>> _requestDealMock;
+        private Mock<IRequestDeal<Deal>> _requestDealMock;
 
         [SetUp]
         public void Setup()
         {
-            _requestDealMock = new Mock<IRequestDeal<int>>();
+            _requestDealMock = new Mock<IRequestDeal<Deal>>();
             _controller = new DealController(_requestDealMock.Object);
         }
 
