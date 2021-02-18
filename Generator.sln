@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "src\Generator\Generator.csproj", "{1669E311-49AC-44E7-B3FC-7CC3C26662F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator", "src\Generator\Generator.csproj", "{1669E311-49AC-44E7-B3FC-7CC3C26662F0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.DomainApi", "src\Generator.DomainApi\Generator.DomainApi.csproj", "{10AAF466-3F4A-47E0-9E75-9737B19B46AF}"
 EndProject
@@ -12,6 +12,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.Persistence.Adapter", "src\Generator.Persistence.Adapter\Generator.Persistence.Adapter.csproj", "{8291FB65-54AF-4D64-AE68-B4F64E33DBE1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.RestAdapter", "src\Generator.RestAdapter\Generator.RestAdapter.csproj", "{AD28F426-0678-452C-9D95-CB14703D8756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Domain.UnitTest", "src\Generator.Domain.UnitTest\Generator.Domain.UnitTest.csproj", "{4BED05BB-3B4A-4D25-82F6-37EFA7587314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.DomainApi.UnitTest", "src\Generator.DomainApi.UnitTest\Generator.DomainApi.UnitTest.csproj", "{F5058CEB-EFF0-439B-A230-480A702CEEAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Persistence.Adapter.UnitTest", "src\Generator.Persistence.Adapter.UnitTest\Generator.Persistence.Adapter.UnitTest.csproj", "{DF38D154-5A4E-461F-BA72-C47BE6C4405A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.RestAdapter.UnitTest", "src\Generator.RestAdapter.UnitTest\Generator.RestAdapter.UnitTest.csproj", "{AB8835EF-ED5D-4F0B-A0D9-99F0359BEFC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,26 @@ Global
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD28F426-0678-452C-9D95-CB14703D8756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA557DAF-FEF3-4225-A467-53B63E6EEC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BED05BB-3B4A-4D25-82F6-37EFA7587314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BED05BB-3B4A-4D25-82F6-37EFA7587314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BED05BB-3B4A-4D25-82F6-37EFA7587314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BED05BB-3B4A-4D25-82F6-37EFA7587314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5058CEB-EFF0-439B-A230-480A702CEEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5058CEB-EFF0-439B-A230-480A702CEEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5058CEB-EFF0-439B-A230-480A702CEEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5058CEB-EFF0-439B-A230-480A702CEEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF38D154-5A4E-461F-BA72-C47BE6C4405A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF38D154-5A4E-461F-BA72-C47BE6C4405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF38D154-5A4E-461F-BA72-C47BE6C4405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF38D154-5A4E-461F-BA72-C47BE6C4405A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8835EF-ED5D-4F0B-A0D9-99F0359BEFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8835EF-ED5D-4F0B-A0D9-99F0359BEFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8835EF-ED5D-4F0B-A0D9-99F0359BEFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8835EF-ED5D-4F0B-A0D9-99F0359BEFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

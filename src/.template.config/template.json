@@ -28,6 +28,18 @@
     },
     {
       "path": "Generator.RestAdapter\\Generator.RestAdapter.csproj"
+    },
+    {
+      "path": "Generator.Domain.UnitTest\\Generator.Domain.UnitTest.csproj"
+    },
+    {
+      "path": "Generator.DomainApi.UnitTest\\Generator.DomainApi.UnitTest.csproj"
+    },
+    {
+      "path": "Generator.Persistence.Adapter.UnitTest\\Generator.Persistence.Adapter.UnitTest.csproj"
+    },
+    {
+      "path": "Generator.RestAdapter.UnitTest\\Generator.RestAdapter.UnitTest.csproj"
     }
   ]
 }
