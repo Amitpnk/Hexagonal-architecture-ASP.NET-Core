@@ -18,7 +18,6 @@ namespace Generator.Domain.UnitTest
             Assert.AreEqual(1, deals[0].Id);
             Assert.AreEqual("ABC", deals[0].Name);
             Assert.AreEqual("ABC deal 123", deals[0].Description);
-
         }
 
         [Test]
