@@ -1,3 +1,10 @@
+[![Visual Studio Marketplace version](https://img.shields.io/badge/-HexagonalArchitecture-%23e2165e.svg)](https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture)
+[![Visual Studio Marketplace downloads](https://vsmarketplacebadge.apphb.com/installs/AmitNaik.HexagonalArchitecture.svg)](https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture)
+[![Visual Studio Marketplace ratings](https://vsmarketplacebadge.apphb.com/rating/AmitNaik.HexagonalArchitecture.svg)](https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture)
+[![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/AmitNaik.HexagonalArchitecture.svg)](https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture)
+
+----
+
 ![.NET Core](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/workflows/.NET%20Core/badge.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/blob/develop/LICENSE)
 
