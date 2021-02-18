@@ -1,10 +1,6 @@
 using Generator.DomainApi.Model;
-using Generator.DomainApi.Port;
-using Generator.Persistence.Adapter.Context;
 using Generator.Persistence.Adapter.UnitTest.Common;
-using Moq;
 using NUnit.Framework;
-using System.Linq;
 
 namespace Generator.Domain.UnitTest
 {

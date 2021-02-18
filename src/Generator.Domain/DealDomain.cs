@@ -1,5 +1,4 @@
-﻿using Generator.DomainApi.Model;
-using Generator.DomainApi.Port;
+﻿using Generator.DomainApi.Port;
 using Generator.Persistence.Adapter.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
