@@ -5,7 +5,7 @@ namespace Generator.DomainApi.Port
 {
     public interface IRequestDeal<T>
     {
-        List<Deal> GetDeals();
-        Deal GetDeal(T id);
+        List<T> GetDeals();
+        T GetDeal(int id);
     }
 }

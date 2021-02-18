@@ -7,22 +7,22 @@ using System.Linq;
 
 namespace Generator.Domain
 {
-    public class DealDomain<T> : IRequestDeal<T>
+    public class DealDomain<T> : IRequestDeal<T> where T : class
     {
-        private readonly ApplicationDbContext _dbContext;
-        private readonly DbSet<Deal> table;
+        private readonly DbSet<T> table;
 
         public DealDomain(ApplicationDbContext dbContext)
         {
+            ApplicationDbContext _dbContext;
             _dbContext = dbContext;
-            table = _dbContext.Set<Deal>();
+            table = _dbContext.Set<T>();
         }
-        public Deal GetDeal(T id)
+        public T GetDeal(int id)
         {
             return table.Find(id);
         }
 
-        public List<Deal> GetDeals()
+        public List<T> GetDeals()
         {
             return table.ToList();
         }

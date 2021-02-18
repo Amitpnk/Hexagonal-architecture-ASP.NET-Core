@@ -16,15 +16,6 @@ namespace Generator.Persistence.Adapter.Context
 
         public DbSet<Deal> Deals { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    if (modelBuilder != null)
-        //    {
-        //        //Fluent API configurations 
-        //        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-        //    }
-        //}
-
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             return base.SaveChangesAsync(cancellationToken);
