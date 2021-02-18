@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Generator
 {
@@ -17,6 +19,7 @@ namespace Generator
 
         public Startup(IConfiguration configuration)
         {
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
             Configuration = configuration;
 
             AppSettings = new AppSettings();
@@ -39,7 +42,7 @@ namespace Generator
 
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory log)
         {
             if (env.IsDevelopment())
             {
@@ -57,6 +60,8 @@ namespace Generator
             app.UseSwaggerConfig();
 
             app.UseHealthCheck();
+
+            log.AddSerilog();
 
             app.UseEndpoints(endpoints =>
             {
