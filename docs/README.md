@@ -81,11 +81,45 @@ App generator API solution template which is built on Hexagnonal Architecture wi
 
 ## Getting Started
 
-todo
+### Step 1: Download extension from project template
 
-### Installation
+   <p> <a href="https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture">Download from Marketplace</a></p>
 
-todo
+![image](img/Step1.png)
+
+### Step 2: Create Project
+
+Select project type as WebAPI, and select Hexagonal Architecture
+
+![image](img/Step2.png)
+
+### Step 3: Select Hexagonal Architecture project template
+
+Select project type as Web API, and select Onion Architecture
+
+![image](img/Step3.png)
+
+### Step 4: Project is ready
+
+![image](img/Step4.png)
+
+### Step 5: Build and run application
+
+#### Health check UI
+
+Navigate to Health Checks UI https://localhost:44377/healthcheck-ui and make sure everything is green.
+
+** Change port number according to your application
+
+![image](img/Step6.png)
+
+#### Swagger UI
+
+Swagger UI https://localhost:44377/OpenAPI/index.html
+
+** Change port number according to your application
+
+![image](img/Step5.png)
 
 ## Contributing
 
