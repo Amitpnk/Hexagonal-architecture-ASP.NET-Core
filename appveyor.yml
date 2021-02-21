@@ -21,7 +21,7 @@ environment:
 before_build:
     - dotnet restore Generator.sln
     - dotnet tool install --global dotnet-sonarscanner --version 5.0.4
-    - dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:my_variable"
+    - dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:ha_secure"
 build:
     project: Generator.sln
     verbosity: minimal
