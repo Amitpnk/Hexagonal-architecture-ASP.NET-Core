@@ -12,8 +12,8 @@ branches:
 #    environment configuration    #
 #---------------------------------#
 environment:
-  my_sonartoken_encrypted:
-    secure: zE4kj0NoeBd1XOBLkDjFZS5lQ//xT5CilUr6ie90FrfE58PkGC1mL1NHumRI3+91
+  my_variable:
+    secure: NhOAZWl58l2RlmsMW0vbXzKZPf9TOrjC8BndGIYAgFBFQNfkORg7tFe6mhOU1XxF
 
 #---------------------------------#
 #       build configuration       #
@@ -21,7 +21,7 @@ environment:
 before_build:
     - dotnet restore Generator.sln
     - dotnet tool install --global dotnet-sonarscanner --version 5.0.4
-    - dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:my_sonartoken_encrypted"
+    - dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:my_variable"
 build:
     project: Generator.sln
     verbosity: minimal
