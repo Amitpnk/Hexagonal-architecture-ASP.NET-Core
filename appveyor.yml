@@ -1,0 +1,47 @@
+#---------------------------------#
+#      general configuration      #
+#---------------------------------#
+version: 1.0.{build}
+os: Visual Studio 2019
+configuration: Release
+branches:
+  only:
+  - main
+
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
+environment:
+  my_sonartoken_encrypted:
+    secure: zE4kj0NoeBd1XOBLkDjFZS5lQ//xT5CilUr6ie90FrfE58PkGC1mL1NHumRI3+91
+
+#---------------------------------#
+#       build configuration       #
+#---------------------------------#
+before_build:
+    - cmd: nuget restore Generator.sln
+    - dotnet tool install -g dotnet-sonarscanner
+    - ps: 'if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { & dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:my_sonartoken_encrypted" }'
+build:
+    project: Generator.sln
+    verbosity: minimal
+after_build:
+    - ps: 'if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { & dotnet sonarscanner end /d:"sonar.login=$env:my_sonartoken_encrypted" }' 
+
+#---------------------------------#
+#       tests configuration       #
+#---------------------------------#
+
+# test_script:
+# - run-tests.cmd
+
+#---------------------------------#
+#    notification configuration   #
+#---------------------------------#
+notifications:
+- provider: Email
+  to:
+  - amit.naik8103@gmail.com
+  on_build_success: false
+  on_build_failure: false
+  on_build_status_changed: true
