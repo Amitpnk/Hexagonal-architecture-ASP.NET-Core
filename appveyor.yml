@@ -19,8 +19,8 @@ environment:
 #       build configuration       #
 #---------------------------------#
 before_build:
-    - cmd: nuget restore Generator.sln
-    - dotnet tool install -g dotnet-sonarscanner
+    - dotnet restore Generator.sln
+    - dotnet tool install --global dotnet-sonarscanner --version 5.0.4
     - ps: 'if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { & dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-architecture-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=$env:my_sonartoken_encrypted" }'
 build:
     project: Generator.sln
