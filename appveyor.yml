@@ -25,8 +25,8 @@ before_build:
 build:
     project: Generator.sln
     verbosity: minimal
-after_build:
-    - dotnet sonarscanner end /d:"sonar.login=%ha_secure%"
+# after_build:
+#     - dotnet sonarscanner end /d:"sonar.login=%ha_secure%"
 
 #---------------------------------#
 #       tests configuration       #
