@@ -95,7 +95,7 @@ Select project type as WebAPI, and select Hexagonal Architecture
 
 ### Step 3: Select Hexagonal Architecture project template
 
-Select project type as Web API, and select Onion Architecture
+Select project type as Web API, and select Hexagonal Architecture
 
 ![image](img/Step3.png)
 
@@ -170,7 +170,7 @@ we can see that all the Layers are dependent only on the Core Layers
 
 ## Licence Used
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Onion-architecture-ASP.NET-Core/blob/develop/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/blob/develop/LICENSE)
 
 See the contents of the LICENSE file for details
 
