@@ -18,15 +18,17 @@ environment:
 #---------------------------------#
 #       build configuration       #
 #---------------------------------#
+build_script:
+    - SET JAVA_HOME=C:\Program Files\Java\jdk1.8.0\bin
+    - SET PATH=%JAVA_HOME%\bin;%PATH%
 before_build:
     - dotnet restore Generator.sln
-    - dotnet tool install --global dotnet-sonarscanner --version 5.0.4
-    - dotnet sonarscanner begin /k:"Amitpnk_Hexagonal-Arch-ASP.NET-Core" /o:"amitpnk" /d:"sonar.host.url=https://sonarcloud.io" /d:"sonar.login=%ha_secure%" 
+    - dotnet tool install --global dotnet-sonarscanner
+    - dotnet sonarscanner begin /o:"amitpnk" /k:"Amitpnk_Hexagonal-Arch-ASP.NET-Core" /d:sonar.host.url="https://sonarcloud.io" /d:"sonar.login=%ha_secure%" 
 build:
-    project: Generator.sln
-    verbosity: minimal
-# after_build:
-#     - dotnet sonarscanner end /d:"sonar.login=%ha_secure%"
+    - dotnet build Generator.sln
+after_build:
+    - dotnet sonarscanner end
 
 #---------------------------------#
 #       tests configuration       #
