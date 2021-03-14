@@ -56,11 +56,11 @@ namespace Generator.Extension
             });
         }
 
-        public static void AddHealthCheck(this IServiceCollection serviceCollection)
+        public static void AddHealthCheck(this IServiceCollection serviceCollection, AppSettings appSettings)
         {
             serviceCollection.AddHealthChecks()
                .AddDbContextCheck<ApplicationDbContext>(name: "Application DB Context", failureStatus: HealthStatus.Degraded)
-               .AddUrlGroup(new Uri("https://amitpnk.github.io/"), name: "My personal website", failureStatus: HealthStatus.Degraded);
+               .AddUrlGroup(new Uri(appSettings.ApplicationDetail.ContactWebsite), name: "My personal website", failureStatus: HealthStatus.Degraded);
 
             serviceCollection.AddHealthChecksUI(setupSettings: setup =>
             {

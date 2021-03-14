@@ -38,7 +38,7 @@ namespace Generator
 
             services.AddApiVersion();
 
-            services.AddHealthCheck();
+            services.AddHealthCheck(AppSettings);
 
         }
 
