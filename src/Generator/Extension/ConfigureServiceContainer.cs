@@ -17,11 +17,11 @@ namespace Generator.Extension
             serviceCollection.AddSwaggerGen(setupAction =>
             {
                 setupAction.SwaggerDoc(
-                    "OpenAPISpecification",
+                    "v1",
                     new Microsoft.OpenApi.Models.OpenApiInfo()
                     {
                         Title = appSettings.ApplicationDetail.ApplicationName,
-                        Version = "1",
+                        Version = "v1",
                         Description = appSettings.ApplicationDetail.Description,
                     });
                 setupAction.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

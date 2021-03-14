@@ -14,8 +14,8 @@ namespace Generator.Extension
 
             app.UseSwaggerUI(setupAction =>
             {
-                setupAction.SwaggerEndpoint("/swagger/OpenAPISpecification/swagger.json", "Hexagonal Architecture API");
-                setupAction.RoutePrefix = "OpenAPI";
+                setupAction.SwaggerEndpoint("/swagger/v1/swagger.json", "Hexagonal Architecture API");
+                setupAction.RoutePrefix = string.Empty;
             });
         }
 
