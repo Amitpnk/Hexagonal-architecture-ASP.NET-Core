@@ -2,12 +2,11 @@
 using Generator.Persistence.Adapter.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
 
 namespace Generator.Extension
 {
@@ -45,9 +44,6 @@ namespace Generator.Extension
                         }, new List<string>()
                     },
                 });
-                var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
-                setupAction.IncludeXmlComments(xmlCommentsFullPath);
             });
         }
 
@@ -70,7 +66,9 @@ namespace Generator.Extension
             serviceCollection.AddHealthChecksUI(setupSettings: setup =>
             {
                 setup.AddHealthCheckEndpoint("Basic Health Check", $"/healthz");
-            });
+            }).AddInMemoryStorage();
+
+
         }
 
     }
