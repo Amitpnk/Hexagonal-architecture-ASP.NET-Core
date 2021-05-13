@@ -4,7 +4,7 @@
 [![Visual Studio Marketplace version](https://vsmarketplacebadge.apphb.com/version/AmitNaik.HexagonalArchitecture.svg)](https://marketplace.visualstudio.com/items?itemName=AmitNaik.HexagonalArchitecture)
 
 ----
-
+[![Build](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/actions/workflows/build.yml/badge.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/actions/workflows/build.yml)
 ![.NET Core](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/workflows/.NET%20Core/badge.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/blob/develop/LICENSE)
 
