@@ -5,7 +5,14 @@
 
 ----
 [![Build](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/actions/workflows/build.yml/badge.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/actions/workflows/build.yml)
-![.NET Core](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/workflows/.NET%20Core/badge.svg)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=bugs)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=code_smells)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=ncloc)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=alert_status)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Amitpnk_Hexagonal-Arch-ASP.NET-Core&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Amitpnk_Hexagonal-Arch-ASP.NET-Core)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amitpnk/Hexagonal-architecture-ASP.NET-Core/blob/develop/LICENSE)
 
 # Hexagonal Architecture ASP.NET Core
