@@ -20,7 +20,7 @@ namespace Generator.DomainApi.UnitTest.Model
             Assert.IsTrue(_dealInfo.Deals.Count > 0);
         }
 
-        private List<Deal> GetDeals()
+        private static List<Deal> GetDeals()
         {
             return
                 new List<Deal> { new Deal { Description = "", Name = "" } };
