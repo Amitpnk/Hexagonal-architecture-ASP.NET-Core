@@ -1,29 +1,27 @@
 ﻿using Generator.DomainApi.Port;
-using Generator.Persistence.Adapter.Context;
-using Microsoft.EntityFrameworkCore;
+using Generator.DomainApi.Model;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Generator.Domain
 {
-    public class DealDomain<T> : IRequestDeal<T> where T : class
+    public class DealDomain<T> : IRequestDeal<T> where T : Deal
     {
-        private readonly DbSet<T> table;
+        private readonly IDealSet table;
 
-        public DealDomain(ApplicationDbContext dbContext)
+        public DealDomain(IApplicationDbContext dbContext)
         {
-            ApplicationDbContext _dbContext;
+            IApplicationDbContext _dbContext;
             _dbContext = dbContext;
-            table = _dbContext.Set<T>();
+            table = _dbContext.Deals;
         }
         public T GetDeal(int id)
         {
-            return table.Find(id);
+            return table.Find<T>(id);
         }
 
         public List<T> GetDeals()
         {
-            return table.ToList();
+            return table.ToList<T>();
         }
     }
 }

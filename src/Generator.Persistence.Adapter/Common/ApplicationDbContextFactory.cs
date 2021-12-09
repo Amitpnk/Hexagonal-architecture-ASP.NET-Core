@@ -1,10 +1,10 @@
-﻿using Generator.DomainApi.Model;
+﻿using System;
+using System.Collections.Generic;
+using Generator.DomainApi.Model;
 using Generator.Persistence.Adapter.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 
-namespace Generator.Persistence.Adapter.UnitTest.Common
+namespace Generator.Persistence.Adapter.Common
 {
     public static class ApplicationDbContextFactory
     {
