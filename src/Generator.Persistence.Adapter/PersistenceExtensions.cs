@@ -1,4 +1,5 @@
-﻿using Generator.Persistence.Adapter.Context;
+﻿using Generator.DomainApi.Port;
+using Generator.Persistence.Adapter.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +11,8 @@ namespace Generator.Persistence.Adapter
         {
             serviceCollection.AddDbContext<ApplicationDbContext>(options =>
                 options.UseInMemoryDatabase("HexaArchConnInMemoryDb"));
+
+            serviceCollection.AddScoped<IApplicationDbContext, ApplicationDbContext>();
         }
     }
 }
