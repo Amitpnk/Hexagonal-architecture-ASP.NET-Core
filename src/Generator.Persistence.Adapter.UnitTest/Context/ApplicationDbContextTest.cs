@@ -1,5 +1,5 @@
 ﻿using Generator.DomainApi.Model;
-using Generator.Persistence.Adapter.UnitTest.Common;
+using Generator.Persistence.Adapter.Common;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using System.Threading.Tasks;
