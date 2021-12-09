@@ -2,6 +2,8 @@ using Generator.Domain;
 using Generator.DomainApi.Services;
 using Generator.Extension;
 using Generator.Persistence.Adapter;
+using Generator.Persistence.Adapter.Common;
+using Generator.Persistence.Adapter.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -46,6 +48,7 @@ namespace Generator
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                SeedTestingData(app);
             }
 
             app.UseHttpsRedirection();
@@ -66,6 +69,17 @@ namespace Generator
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void SeedTestingData(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
+
+                context.Deals.AddRange(ApplicationDbContextFactory.GetDeals());
+                context.SaveChanges();
+            }
         }
     }
 }
